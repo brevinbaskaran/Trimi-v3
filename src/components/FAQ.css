@@ -1,0 +1,56 @@
+.FAQ {
+    background-color: #18171A;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 1199px;
+    height: 450px; 
+    margin: 0 auto;
+    overflow-y: scroll; 
+  }
+  
+  .FAQ h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: Outfit;
+    color: #fff;
+
+  }
+  
+  .FAQ h3 {
+    cursor: pointer;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .FAQ h3.open,
+  .FAQ h3:hover {
+    color: #fff;
+  }
+  
+  .FAQ h3 span {
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .FAQ h3.open span, 
+  .FAQ h3:hover span {
+    color: #00FFF0;
+  }
+  
+  .FAQ p {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: Outfit;
+    color: #fff;
+
+  }
+  
+  .FAQ hr {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
+  }
+  

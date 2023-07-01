@@ -1,0 +1,119 @@
+.membership {
+  margin-top: -50px;
+  background: #18171A;
+  color: #fff;
+  padding: 6rem calc((100vw-1100px) / 2);
+  text-align: center;
+}
+
+.membership--container {
+  margin: 3rem auto;
+  padding: 2rem 0;
+}
+
+.membership--container h1 {
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 4rem);
+  padding: 0 1rem;
+}
+.membership--desc {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  width: 80%;
+  margin: auto;
+}
+
+.membership--wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  /*border:1px solid red;*/
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(-15%);
+}
+
+.gym-packages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.package-card {
+  width: 30%;
+}
+
+.package-header {
+  background-color: #000;
+  padding: 1rem;
+  width: 342px;
+height: 300px;
+
+  text-align: center;
+}
+
+.package-price h2 {
+  color: #00FFF0;
+  font-size: 75px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.package-price p {
+  color: #00FFF0;
+  text-align: center;
+  font-size: 40px;
+  font-family: Lato;
+  font-weight: 300;
+}
+.package-price h5 {
+  color: #FFF;
+  text-align: center;
+  font-size: 23px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+
+.feature--item{
+  margin-bottom: 1.2rem;
+  margin-left: 0.8rem;
+  font-family: "Lato",sans-serif;
+  font-size: clamp(1rem, 5vw, 1.2rem); ;
+  display: flex; 
+  align-items: center; 
+}
+
+.feature--item .fa-check-circle{
+  color:#00FFF0;
+  margin-right: 0.5rem;
+}
+
+
+.package-features {
+  background-color: #888;
+  padding: 1rem;
+  width: 342px;
+height: 250px;
+align-items: flex-start; /* Align items to the start of the column */
+
+}
+
+.custom-primary-button {
+
+border-radius: 200px !important;
+border: 1px solid #00FFF0 !important;
+background: #00FFF0 !important;
+width: 210px;
+height: 45px;
+padding: auto;
+
+}
+
