@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/brevinbaskaran/Trimi-v3/static/css/main.49f4cbc1.css",
+    "main.js": "/brevinbaskaran/Trimi-v3/static/js/main.ebf54ec0.js",
+    "static/media/Outfit-VariableFont_wght.ttf": "/brevinbaskaran/Trimi-v3/static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
+    "static/media/cardio.jpeg": "/brevinbaskaran/Trimi-v3/static/media/cardio.842b74f4705ff4f21053.jpeg",
+    "static/media/class_1.jpeg": "/brevinbaskaran/Trimi-v3/static/media/class_1.0486f9bfe57c97adcb01.jpeg",
+    "static/media/yoga.jpeg": "/brevinbaskaran/Trimi-v3/static/media/yoga.e26756260d8af6756ad9.jpeg",
+    "static/media/nav-logo.png": "/brevinbaskaran/Trimi-v3/static/media/nav-logo.03c30a6fb9644acfa6e3.png",
+    "static/media/trainer_1.jpeg": "/brevinbaskaran/Trimi-v3/static/media/trainer_1.f84bf10c61ba796e7c84.jpeg",
+    "static/media/Orbitron-VariableFont_wght.ttf": "/brevinbaskaran/Trimi-v3/static/media/Orbitron-VariableFont_wght.7228a1c750b75b23bdb4.ttf",
+    "index.html": "/brevinbaskaran/Trimi-v3/index.html",
+    "main.49f4cbc1.css.map": "/brevinbaskaran/Trimi-v3/static/css/main.49f4cbc1.css.map",
+    "main.ebf54ec0.js.map": "/brevinbaskaran/Trimi-v3/static/js/main.ebf54ec0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49f4cbc1.css",
+    "static/js/main.ebf54ec0.js"
+  ]
+}

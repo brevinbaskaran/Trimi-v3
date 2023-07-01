@@ -1,5 +1,6 @@
 {
-  "name": "react", 
+  "homepage": "https://github.com/brevinbaskaran/Trimi-v3",
+  "name": "react",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -16,12 +17,15 @@
     "react-scroll": "^1.8.9"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   },
   "browserslist": {
