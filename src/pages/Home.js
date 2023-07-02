@@ -5,6 +5,7 @@ import FAQ from "../components/FAQ"
 import Membership from "../components/Membership"
 import Teams from "../components/Teams"
 import ContactForm from '../components/ContactForm';
+import Transform from '../components/HealthInfo'
 
 
 
@@ -17,7 +18,11 @@ export default function Home() {
       <Membership/>
       <Teams/>
       <FAQ/>
+      <Transform/> 
       <ContactForm/> 
+    
+
+
 
 
 

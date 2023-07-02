@@ -1,18 +1,17 @@
 .form-container {
     display: flex;
-    background: #001001;
+    background: #18171A;;
 }
 
 .form-content {
     width: 50%;
     padding: 20px;
-    background-color: #001001;
+    background-color: #18171A;
 
 }
 
 .form-content h2 {
     color: #ffffff;
-    font-size: 24px;
     color: #FFF;
     font-size: 38px;
     font-family: Montserrat;
@@ -20,6 +19,12 @@
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.46px;
+}
+.form-content h3 {
+    color: #00FFF0;
+    font-size: 18px;
+    font-family: Montserrat;
+   
 }
 
 .form-content form .form-group {
@@ -87,19 +92,19 @@
 .map-container {
     width: 50%;
     padding: 20px;
-    background-color: #001001;
+    background-color: #18171A;;
   }
   
   .map-container iframe {
     width: 100%;
-    height: calc(100% - 100px); /* Adjust the height as needed */
+    height: calc(100% - 80px); /* Adjust the height as needed */
   }
   
   .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 530px; /* Adjust the margin-top value as needed */
+    margin-top: 600px; /* Adjust the margin-top value as needed */
     margin-left: -700px; /* Adjust the margin-top value as needed */
 
 }

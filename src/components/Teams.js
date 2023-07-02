@@ -20,7 +20,7 @@ const ContactCards = () => {
     {
       id: 2,
       name: 'Emma Austin',
-      description: 'Introducing Alex, a dedicated male personal trainer with expertise in weightlifting and functional training. Through tailored workouts and expert guidance, he helps clients build strength.',
+      description: 'Meet Emma, an experienced personal trainer specializing in HIIT and cardiovascular conditioning. With dynamic workouts and personalized guidance, she boosts fitness levels and promotes beauty.',
       image: Alex,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',
@@ -32,7 +32,7 @@ const ContactCards = () => {
     {
       id: 3,
       name: 'Max Jamenson',
-      description: 'Introducing Alex, a dedicated male personal trainer with expertise in weightlifting and functional training. Through tailored workouts and expert guidance, he helps clients build strength.',
+      description: ' Max is  a certified trainer with a passion for strength training and bodybuilding. With his  knowledge and motivational coaching style, he helps clients sculpt their dream physiques and achieve their fitness goals.',
       image: Alex,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',
@@ -44,7 +44,7 @@ const ContactCards = () => {
     {
       id: 4,
       name: 'Sarah Davidson',
-      description: 'Introducing Alex, a dedicated male personal trainer with expertise in weightlifting and functional training. Through tailored workouts and expert guidance, he helps clients build strength.',
+      description: 'Meet Sarah, a versatile personal trainer specializing in functional training and yoga. She empowers clients through a holistic approach, building flexibility, and mindfulness for a balanced lifestyle.',
       image: Alex,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',

@@ -1,5 +1,5 @@
 .membership {
-  margin-top: -50px;
+  margin-top: -48px;
   background: #18171A;
   color: #fff;
   padding: 6rem calc((100vw-1100px) / 2);
@@ -114,6 +114,12 @@ background: #00FFF0 !important;
 width: 210px;
 height: 45px;
 padding: auto;
+color: #000;
+font-size: 20px;
+font-family: Outfit;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 
 }
 

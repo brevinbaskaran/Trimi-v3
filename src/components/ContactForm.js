@@ -11,6 +11,8 @@ const FormPage = () => {
         <h2>Reach Out to Us Today</h2>
         <br></br>
         <Form>
+        <h3>Step 1: Fill out Information</h3>
+
           <Form.Group controlId="fullName">
             <Form.Label></Form.Label>
             <Form.Control type="text" placeholder="Enter your full name" />
@@ -28,6 +30,7 @@ const FormPage = () => {
             <Form.Control type="tel" placeholder="Enter your phone number" />
           </Form.Group>
           <br></br>
+          <h3>Step 2: Select Services</h3>
 
           <Form.Group controlId="serviceType">
             <Form.Label></Form.Label>
@@ -61,8 +64,9 @@ const FormPage = () => {
             </Form.Control>
           </Form.Group>
           <br></br>
+          <h3>Step 3: Tell us About You</h3>
           <Form.Group controlId="describeGoals" className="describe-goals">
-            <Form.Label>Describe your goals</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control as="textarea" rows={3} placeholder="Describe your goals" />
           </Form.Group>
           <br></br>
