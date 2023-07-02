@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { Card, Container, Col } from 'react-bootstrap';
 import Alex from './trainer_1.jpeg';
+import Emma from './trainer-2.jpeg';
+import Max from './trainer-3.jpeg';
+import Sarah from './trainer-4.jpeg';
+
+
+
 
 import './Teams.css';
 
@@ -21,7 +27,7 @@ const ContactCards = () => {
       id: 2,
       name: 'Emma Austin',
       description: 'Meet Emma, an experienced personal trainer specializing in HIIT and cardiovascular conditioning. With dynamic workouts and personalized guidance, she boosts fitness levels and promotes beauty.',
-      image: Alex,
+      image: Emma,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',
         twitter: 'https://www.twitter.com/johndoe',
@@ -33,7 +39,7 @@ const ContactCards = () => {
       id: 3,
       name: 'Max Jamenson',
       description: ' Max is  a certified trainer with a passion for strength training and bodybuilding. With his  knowledge and motivational coaching style, he helps clients sculpt their dream physiques and achieve their fitness goals.',
-      image: Alex,
+      image: Max,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',
         twitter: 'https://www.twitter.com/johndoe',
@@ -45,7 +51,7 @@ const ContactCards = () => {
       id: 4,
       name: 'Sarah Davidson',
       description: 'Meet Sarah, a versatile personal trainer specializing in functional training and yoga. She empowers clients through a holistic approach, building flexibility, and mindfulness for a balanced lifestyle.',
-      image: Alex,
+      image: Sarah,
       socialMedia: {
         facebook: 'https://www.facebook.com/johndoe',
         twitter: 'https://www.twitter.com/johndoe',

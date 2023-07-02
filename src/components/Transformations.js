@@ -11,7 +11,7 @@ const Carousel = () => {
     const [index, setIndex] = useState(0);
     const clientPhotos = [
         {
-            name: 'John Doe',
+            name: 'Jason Moama',
             progress: 'Gained 20lbs of muscles in 6 months!',
             photo: transform1
         },
@@ -21,8 +21,8 @@ const Carousel = () => {
             photo: transform2
         },
         {
-            name: 'Jane Doe',
-            progress: 'Gained 30 lbs of muscle in 1 year!',
+            name: 'Peter Doe',
+            progress: 'Gained 10 lbs of muscle in 1 year!',
             photo: transform3
         }
     ];
