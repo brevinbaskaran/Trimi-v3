@@ -43,6 +43,11 @@
   .carousel-info h2 {
     margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
+    font-family: Outfit;
+  }
+  .carousel-info p {
+    font-family: Outfit;
+    
   }
   
   .carousel-nav {

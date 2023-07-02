@@ -56,7 +56,7 @@ export default function Features() {
             </div>
           </div>
           <div className="image" ref={el => { imageRef = el }}>
-            <img className="features-image" src="https://www.theglobeandmail.com/resizer/ooY9Q_M3a7_DZxyAnFM0PWmQunA=/arc-anglerfish-tgam-prod-tgam/public/RV7HT2OT6FEO7INUBJH7F3UXWU.jpg" alt="gym" />
+            <img className="features-image" src="https://www.mensjournal.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk2MTM2MDQyNDIzOTg1Mjk3/dbfrontsquat.jpg" alt="gym" />
           </div>
         </div>
       </div>

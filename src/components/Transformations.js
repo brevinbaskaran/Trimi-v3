@@ -12,12 +12,12 @@ const Carousel = () => {
     const clientPhotos = [
         {
             name: 'John Doe',
-            progress: 'Lost 50 lbs in 6 months!',
+            progress: 'Gained 20lbs of muscles in 6 months!',
             photo: transform1
         },
         {
-            name: 'Jane Doe',
-            progress: 'Lost 30 lbs of muscle in 3 months!',
+            name: 'Lily Samson',
+            progress: 'Lost 50lbs in 3 months!',
             photo: transform2
         },
         {
@@ -44,7 +44,7 @@ const Carousel = () => {
 
     return (
         <div className="transformation">
-            <br></br>            <br></br>
+            <br></br><br></br>
             <h2 className="TransformHeading">Past Clients</h2>
 
             <div className="carousel">

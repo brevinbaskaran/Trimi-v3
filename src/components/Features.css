@@ -53,11 +53,14 @@
   justify-content: flex-end;
   align-items: center;
   margin-left: 100px;
+ 
 }
 
 .features-container .features-image {
   width: 100%;
   height: 100%;
+  border: 2px solid #00FFF0; 
+  border-radius: 10px; 
 }
 
 .features-container .brush-stroke {
