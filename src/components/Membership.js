@@ -29,7 +29,7 @@ export default function Membership() {
 
     <div id="membership" className="membership">
       <div className="membership--container">
-        <h1>Start building muscle today with Packages</h1>
+        <h1>Start your Fitness Journey</h1>
 
         <div
           className="membership--wrap"
