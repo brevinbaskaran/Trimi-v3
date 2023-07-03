@@ -56,9 +56,9 @@
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Added */
-    width: 100%; /* Added */
-    padding: 0 1rem; /* Added */
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 1rem; 
   }
   
   .carousel-nav button {
@@ -82,7 +82,7 @@
   }
   
   .carousel-nav .next:before {
-    transform: rotate(45deg); /* Modified */
-    margin-top: 0; /* Modified */
+    transform: rotate(45deg); 
+    margin-top: 0; 
   }
   

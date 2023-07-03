@@ -97,15 +97,15 @@
   
   .map-container iframe {
     width: 100%;
-    height: calc(100% - 80px); /* Adjust the height as needed */
+    height: calc(100% - 80px); 
   }
   
   .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 600px; /* Adjust the margin-top value as needed */
-    margin-left: -700px; /* Adjust the margin-top value as needed */
+    margin-top: 600px; 
+    margin-left: -700px; 
 
 }
   

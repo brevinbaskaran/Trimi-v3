@@ -72,17 +72,17 @@
 .hero-btns {
   margin-top: 35px;
   justify-content: space-between;
-  align-items: flex-end; /* Add this line */
+  align-items: flex-end; 
 
 }
 
 .stats {
   margin-left: 1rem;
   display: flex;
-  margin-top: 20px; /* Adjust the margin as per your preference */
+  margin-top: 20px; 
   flex-direction: column;
   margin-left: 5px; 
-  align-items: baseline; /* Align items at the baseline */
+  align-items: baseline; 
 }
 
 .stats h4 {
