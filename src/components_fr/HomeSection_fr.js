@@ -19,27 +19,22 @@ export default function HeroSection() {
   return (
     <div className="hero-container" id="hero">
       <div className="hero--header" ref={el => { textRef = el }}>
-        <h3 className="energize">Energize</h3>
-        <h4>Your Potential</h4>
+        <h3 className="energize">Revitalisez</h3>
+        <h4>Votre potentiel</h4>
 
         <div className="hero--subheader">
-          <h3>Achieve your fitness goals with our high-energy classes! Designed for all fitness levels, our fun and motivating workouts will push you to reach peak performance. Get ready to sweat and conquer your potential!</h3>
+          <h3>Atteignez vos objectifs de remise en forme avec nos cours haute énergie ! Conçus pour tous les niveaux de condition physique, nos entraînements amusants et motivants vous pousseront à atteindre des performances optimales. Préparez-vous à transpirer et à conquérir votre potentiel !</h3>
         </div>
         <div className="hero-btns">
-          <Link to="/Classes">
-            <Button variant="primary" className="custom-primary-button">Get Started</Button>
+          <Link to="/Classes_fr">
+            <Button variant="primary" className="custom-primary-button">Commencer</Button>
           </Link>
           <div className="stats" ref={(el) => { statsRef = el }}>
             <h4>200+</h4>
-            <h5>Members Joined</h5>
-
+            <h5>Membres inscrits</h5>
           </div>
         </div>
-
       </div>
-
-
-
     </div>
   )
 }

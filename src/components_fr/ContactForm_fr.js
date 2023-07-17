@@ -25,14 +25,14 @@ const FormPage = () => {
       serviceType === '' ||
       experienceLevel === ''
     ) {
-      alert('Please fill in all required fields.');
+      alert('Veuillez remplir tous les champs requis.');
       return;
     }
 
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailAddress)) {
-      alert('Please enter a valid email address.');
+      alert('Veuillez entrer une adresse e-mail valide.');
       return;
     }
 
@@ -44,17 +44,17 @@ const FormPage = () => {
   return (
     <div id="contact" className="form-container">
       <div className="form-content">
-        <h2>Reach Out to Us Today</h2>
+        <h2>Contactez-nous aujourd'hui</h2>
         <br />
         <Form onSubmit={handleSubmit}>
-          <h3>Step 1: Fill out Information</h3>
+          <h3>Étape 1 : Remplissez les informations</h3>
 
           <Form.Group controlId="fullName">
             <Form.Label htmlFor="fullName"></Form.Label>
             <Form.Control
               type="text"
               id="fullName"
-              placeholder="Enter your full name"
+              placeholder="Entrez votre nom complet"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
             />
@@ -66,7 +66,7 @@ const FormPage = () => {
             <Form.Control
               type="email"
               id="emailAddress"
-              placeholder="Enter your email address"
+              placeholder="Entrez votre adresse e-mail"
               value={emailAddress}
               onChange={(e) => setEmailAddress(e.target.value)}
             />
@@ -78,13 +78,13 @@ const FormPage = () => {
             <Form.Control
               type="tel"
               id="phoneNumber"
-              placeholder="Enter your phone number"
+              placeholder="Entrez votre numéro de téléphone"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </Form.Group>
           <br />
-          <h3>Step 2: Select Services</h3>
+          <h3>Étape 2 : Sélectionnez les services</h3>
 
           <Form.Group controlId="serviceType">
             <Form.Label htmlFor="serviceType"></Form.Label>
@@ -94,10 +94,10 @@ const FormPage = () => {
               value={serviceType}
               onChange={(e) => setServiceType(e.target.value)}
             >
-              <option value="">Select a service type</option>
-              <option value="Membership Purchases">Membership Purchases</option>
-              <option value="Online Classes">Online Classes</option>
-              <option value="Other">Other</option>
+              <option value="">Sélectionnez un type de service</option>
+              <option value="Achats d'adhésion">Achats d'adhésion</option>
+              <option value="Cours en ligne">Cours en ligne</option>
+              <option value="Autre">Autre</option>
             </Form.Control>
           </Form.Group>
           <br />
@@ -110,10 +110,10 @@ const FormPage = () => {
               value={experienceLevel}
               onChange={(e) => setExperienceLevel(e.target.value)}
             >
-              <option value="">Select your experience level</option>
-              <option value="Beginner">Beginner</option>
-              <option value="Intermediate">Intermediate</option>
-              <option value="Advanced">Advanced</option>
+              <option value="">Sélectionnez votre niveau d'expérience</option>
+              <option value="Débutant">Débutant</option>
+              <option value="Intermédiaire">Intermédiaire</option>
+              <option value="Avancé">Avancé</option>
             </Form.Control>
           </Form.Group>
           <br />
@@ -126,21 +126,21 @@ const FormPage = () => {
               value={interestedOnlineClass}
               onChange={(e) => setInterestedOnlineClass(e.target.value)}
             >
-              <option value="">Select an online class</option>
-              <option value="Weight Training">Weight Training</option>
+              <option value="">Sélectionnez un cours en ligne</option>
+              <option value="Entraînement avec poids">Entraînement avec poids</option>
               <option value="Cardio">Cardio</option>
               <option value="Yoga">Yoga</option>
             </Form.Control>
           </Form.Group>
           <br />
-          <h3>Step 3: Tell us About You</h3>
+          <h3>Étape 3 : Parlez-nous de vous</h3>
           <Form.Group controlId="describeGoals" className="describe-goals">
             <Form.Label htmlFor="describeGoals"></Form.Label>
             <Form.Control
               as="textarea"
               id="describeGoals"
               rows={3}
-              placeholder="Describe your goals"
+              placeholder="Décrivez vos objectifs"
               value={describeGoals}
               onChange={(e) => setDescribeGoals(e.target.value)}
             />
@@ -149,10 +149,10 @@ const FormPage = () => {
           <br />
 
           <Button variant="primary" type="submit" className="submit-button">
-            Submit
+            Soumettre
           </Button>
         </Form>
-        {formSubmitted && <p>Form submitted successfully!</p>}
+        {formSubmitted && <p>Formulaire soumis avec succès !</p>}
       </div>
 
       <div className="map-container">
@@ -172,7 +172,7 @@ const FormPage = () => {
           <div className="contact-item">
             <AiOutlinePhone color="#00FFF0" size={24} />
             <div className="contact-item-content">
-              <h3 className="contact-heading">Phone</h3>
+              <h3 className="contact-heading">Téléphone</h3>
               <p>(647) 768 8391</p>
             </div>
           </div>
@@ -180,7 +180,7 @@ const FormPage = () => {
           <div className="contact-item">
             <AiOutlineMail color="#00FFF0" size={24} />
             <div className="contact-item-content">
-              <h3 className="contact-heading">Email</h3>
+              <h3 className="contact-heading">E-mail</h3>
               <p>info@trimifitness.com</p>
             </div>
           </div>
@@ -188,9 +188,9 @@ const FormPage = () => {
           <div className="contact-item">
             <AiOutlineClockCircle color="#00FFF0" size={24} />
             <div className="contact-item-content">
-              <h3 className="contact-heading">Opening Hours</h3>
-              <p className="contact-subtext">Monday - Friday: 8:00am - 6:00pm</p>
-              <p className="contact-subtext">Saturday & Sunday: 9:00am - 5:00pm</p>
+              <h3 className="contact-heading">Heures d'ouverture</h3>
+              <p className="contact-subtext">Lundi - Vendredi : 8h00 - 18h00</p>
+              <p className="contact-subtext">Samedi et Dimanche : 9h00 - 17h00</p>
             </div>
           </div>
         </div>

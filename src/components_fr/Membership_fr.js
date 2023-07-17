@@ -1,15 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { Button, Card } from 'react-bootstrap';
-import { useHistory } from 'react-router-dom'; 
-
+import { useHistory } from 'react-router-dom';
 
 import './Membership.css';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Membership() {
-
   const history = useHistory(); // Create a history object using useHistory
 
   let text = useRef(null);
@@ -30,13 +28,13 @@ export default function Membership() {
   }, []);
 
   const handleButtonClick = () => {
-    history.push('/Classes'); 
+    history.push('/Classes_fr');
   };
 
   return (
     <div id="membership" className="membership">
       <div className="membership--container">
-        <h1>Start your Fitness Journey</h1>
+        <h1>Commencez votre parcours de remise en forme</h1>
 
         <div className="membership--wrap" ref={(el) => (text = el)}>
           <div className="gym-packages">
@@ -44,10 +42,10 @@ export default function Membership() {
               <Card.Body>
                 <div className="package-header">
                   <div className="package-price">
-                    <h5>Starter</h5>
+                    <h5>Débutant</h5>
                     <br />
-                    <h2>$25.50</h2>
-                    <p>biweekly</p>
+                    <h2>25,50 $</h2>
+                    <p>bihebdomadaire</p>
                   </div>
                 </div>
                 <div className="package-features">
@@ -56,26 +54,26 @@ export default function Membership() {
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Access to Basic Equipment</span>
-                    Access to Basic Equipment
+                    <span className="sr-only">Accès à l'équipement de base</span>
+                    Accès à l'équipement de base
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Under Trainer Surveillance</span>
-                    Under Trainer Surveillance
+                    <span className="sr-only">Sous surveillance d'un entraîneur</span>
+                     Surveillance entraîneur
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Indoor Swimming Pool Access</span>
-                    Indoor Swimming Pool Access
+                    <span className="sr-only">Accès à la piscine intérieure</span>
+                    Accès à la piscine intérieure
                   </p>
                   <br />
                   <Button variant="primary" className="custom-primary-button" onClick={handleButtonClick}>
-                    Get Started
+                    Commencer
                   </Button>
                 </div>
               </Card.Body>
@@ -87,8 +85,8 @@ export default function Membership() {
                   <div className="package-price">
                     <h5>Pro</h5>
                     <br />
-                    <h2>$30.25</h2>
-                    <p>biweekly</p>
+                    <h2>30,25 $</h2>
+                    <p>bihebdomadaire</p>
                   </div>
                 </div>
                 <div className="package-features">
@@ -97,26 +95,26 @@ export default function Membership() {
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Access to ALL Equipment</span>
-                    Access to ALL Equipment
+                    <span className="sr-only">Accès à tout l'équipement</span>
+                    Accès à tout l'équipement
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Guided by Trainer</span>
-                    Guided by Trainer
+                    <span className="sr-only">Encadré par un entraîneur</span>
+                    Encadré par un entraîneur
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Sauna Access</span>
-                    Sauna Access
+                    <span className="sr-only">Accès au sauna</span>
+                    Accès au sauna
                   </p>
                   <br />
                   <Button variant="primary" className="custom-primary-button" onClick={handleButtonClick}>
-                    Get Started
+                    Commencer
                   </Button>
                 </div>
               </Card.Body>
@@ -128,8 +126,8 @@ export default function Membership() {
                   <div className="package-price">
                     <h5>Premium</h5>
                     <br />
-                    <h2>$37.50</h2>
-                    <p>biweekly</p>
+                    <h2>37,50 $</h2>
+                    <p>bihebdomadaire</p>
                   </div>
                 </div>
                 <div className="package-features">
@@ -138,26 +136,26 @@ export default function Membership() {
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Access to ALL Amenities</span>
-                    Access to ALL Amenities
+                    <span className="sr-only">Accès à toutes les commodités</span>
+                    Accès à toutes les commodités
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">UNLIMITED Access to Classes</span>
-                    UNLIMITED Access to Classes
+                    <span className="sr-only">Accès ILLIMITÉ aux cours</span>
+                    Accès ILLIMITÉ aux cours
                   </p>
                   <p className="feature--item">
                     <span aria-hidden="true">
                       <i className="fas fa-check-circle"></i>
                     </span>
-                    <span className="sr-only">Towel Services</span>
-                    Towel Services
+                    <span className="sr-only">Services de serviettes</span>
+                    Services de serviettes
                   </p>
                   <br />
                   <Button variant="primary" className="custom-primary-button" onClick={handleButtonClick}>
-                    Get Started
+                    Commencer
                   </Button>
                 </div>
               </Card.Body>

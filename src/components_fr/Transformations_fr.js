@@ -9,17 +9,17 @@ const Carousel = () => {
   const clientPhotos = [
     {
       name: 'Jason Moama',
-      progress: 'Gained 20lbs of muscles in 6 months!',
+      progress: 'Pris 20 livres de muscle en 6 mois !',
       photo: transform1
     },
     {
       name: 'Lily Samson',
-      progress: 'Lost 50lbs in 3 months!',
+      progress: 'Perdu 50 livres en 3 mois !',
       photo: transform2
     },
     {
       name: 'Peter Doe',
-      progress: 'Gained 10 lbs of muscle in 1 year!',
+      progress: 'Pris 10 livres de muscle en 1 an !',
       photo: transform3
     }
   ];
@@ -43,7 +43,7 @@ const Carousel = () => {
     <section className="transformation">
       <br />
       <br />
-      <h2 className="TransformHeading">Past Clients</h2>
+      <h2 className="TransformHeading">Clients passés</h2>
 
       <figure className="carousel">
         <img src={clientPhotos[index].photo} alt={clientPhotos[index].name} />

@@ -1,233 +1,221 @@
 import React, { useState } from 'react';
-import FitnessClassCard from './FitnessClassCard';
+import FitnessClassCard from './FitnessClassCard_fr';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import './Classes.css';
 import weight from './class_images/class_1.jpeg';
 import yoga from './class_images/yoga.jpeg';
 import cardio from './class_images/cardio.jpeg';
 
-
-
-
-
 const FitnessClassApp = () => {
-  // Sample data for fitness classes
   const fitnessClassesData = [
-      {
-        id: 1,
-        image: weight,
-        category: 'Weight Training',
-        students: 8,
-        name: 'Strength Training 101',
-        length: 100,
-        instructor: 'Alex',
-        classes: 5,
-        difficulty: 'Beginner',
-      },
-      {
-        id: 2,
-        image: yoga,
-        category: 'Yoga',
-        students: 15,
-        name: 'Yoga Flow',
-        length: 60,
-        instructor: 'Emma',
-        classes: 10,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 3,
-        image: cardio,
-        category: 'Cardio',
-        students: 20,
-        name: 'High-Intensity Interval Training',
-        length: 60,
-        instructor: 'Max',
-        classes: 18,
-        difficulty: 'Advanced',
-      },
-      {
-        id: 4,
-        image: yoga,
-        category: 'Weight Training',
-        students: 9,
-        name: 'Full Body Sculpt',
-        length: 60,
-        instructor: 'Austin',
-        classes: 22,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 5,
-        image: weight,
-        category: 'Weight Training',
-        students: 12,
-        name: 'Powerlifting Basics',
-        length: 60,
-        instructor: 'Max',
-        classes: 8,
-        difficulty: 'Beginner',
-      },
-      {
-        id: 6,
-        image: yoga,
-        category: 'Yoga',
-        students: 20,
-        name: 'Vinyasa Flow',
-        length: 60,
-        instructor: 'Sarah',
-        classes: 15,
-        difficulty: 'Advanced',
-      },
-      {
-        id: 7,
-        image: cardio,
-        category: 'Cardio',
-        students: 6,
-        name: 'Kickboxing Cardio',
-        length: 45,
-        instructor: 'Sarah',
-        classes: 7,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 8,
-        image: weight,
-        category: 'Weight Training',
-        students: 10,
-        name: 'Functional Strength',
-        length: 75,
-        instructor: 'Emma',
-        classes: 12,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 9,
-        image: yoga,
-        category: 'Yoga',
-        students: 5,
-        name: 'Restorative Yoga',
-        length: 90,
-        instructor: 'George',
-        classes: 4,
-        difficulty: 'Beginner',
-      },
-      {
-        id: 10,
-        image: cardio,
-        category: 'Cardio',
-        students: 18,
-        name: 'Zumba Dance Party',
-        length: 45,
-        instructor: 'Max',
-        classes: 20,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 11,
-        image: weight,
-        category: 'Weight Training',
-        students: 14,
-        name: 'Bodyweight Bootcamp',
-        length: 60,
-        instructor: 'Sarah',
-        classes: 10,
-        difficulty: 'Advanced',
-      },
-      {
-        id: 12,
-        image: yoga,
-        category: 'Yoga',
-        students: 7,
-        name: 'Yin Yoga',
-        length: 75,
-        instructor: 'Alex',
-        classes: 6,
-        difficulty: 'Intermediate',
-      },
-      {
-        id: 13,
-        image: yoga,
-        category: 'Yoga',
-        students: 8,
-        name: 'Hatha Yoga',
-        length: 60,
-        instructor: 'Max',
-        classes: 5,
-        difficulty: 'Beginner',
-      },
-      // 14th fitness class
-      {
-        id: 14,
-        image: cardio,
-        category: 'Cardio',
-        students: 15,
-        name: 'Dance Cardio',
-        length: 60,
-        instructor: 'Emma',
-        classes: 10,
-        difficulty: 'Intermediate',
-      },
-      // 15th fitness class
-      {
-        id: 15,
-        image: yoga,
-        category: 'Yoga',
-        students: 20,
-        name: 'Vinyasa Flow',
-        length: 75,
-        instructor: 'Sarah',
-        classes: 12,
-        difficulty: 'Intermediate',
-      },
-      // 16th fitness class
-      {
-        id: 16,
-        image: cardio,
-        category: 'Cardio',
-        students: 10,
-        name: 'Kickboxing Fusion',
-        length: 45,
-        instructor: 'Sarah',
-        classes: 8,
-        difficulty: 'Advanced',
-      },
-      // 17th fitness class
-      {
-        id: 17,
-        image: yoga,
-        category: 'Yoga',
-        students: 12,
-        name: 'Power Yoga',
-        length: 60,
-        instructor: 'Austin',
-        classes: 15,
-        difficulty: 'Advanced',
-      },
-      // 18th fitness class
-      {
-        id: 18,
-        image: cardio,
-        category: 'Cardio',
-        students: 18,
-        name: 'HIIT and Run',
-        length: 45,
-        instructor: 'Alex',
-        classes: 20,
-        difficulty: 'Intermediate',
-      },
-    
-
+    {
+      id: 1,
+      image: weight,
+      category: 'Entraînement avec des poids',
+      students: 8,
+      name: 'Entraînement à la force 101',
+      length: 100,
+      instructor: 'Alex',
+      classes: 5,
+      difficulty: 'Débutant',
+    },
+    {
+      id: 2,
+      image: yoga,
+      category: 'Yoga',
+      students: 15,
+      name: 'Yoga Flow',
+      length: 60,
+      instructor: 'Emma',
+      classes: 10,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 3,
+      image: cardio,
+      category: 'Cardio',
+      students: 20,
+      name: 'Entraînement par intervalles de haute intensité',
+      length: 60,
+      instructor: 'Max',
+      classes: 18,
+      difficulty: 'Avancé',
+    },
+    {
+      id: 4,
+      image: yoga,
+      category: 'Entraînement avec des poids',
+      students: 9,
+      name: 'Sculpture du corps entier',
+      length: 60,
+      instructor: 'Austin',
+      classes: 22,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 5,
+      image: weight,
+      category: 'Entraînement avec des poids',
+      students: 12,
+      name: 'Bases de haltérophilie',
+      length: 60,
+      instructor: 'Max',
+      classes: 8,
+      difficulty: 'Débutant',
+    },
+    {
+      id: 6,
+      image: yoga,
+      category: 'Yoga',
+      students: 20,
+      name: 'Vinyasa Flow',
+      length: 60,
+      instructor: 'Sarah',
+      classes: 15,
+      difficulty: 'Avancé',
+    },
+    {
+      id: 7,
+      image: cardio,
+      category: 'Cardio',
+      students: 6,
+      name: 'Cardio Kickboxing',
+      length: 45,
+      instructor: 'Sarah',
+      classes: 7,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 8,
+      image: weight,
+      category: 'Entraînement avec des poids',
+      students: 10,
+      name: 'Force fonctionnelle',
+      length: 75,
+      instructor: 'Emma',
+      classes: 12,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 9,
+      image: yoga,
+      category: 'Yoga',
+      students: 5,
+      name: 'Yoga de restauration',
+      length: 90,
+      instructor: 'George',
+      classes: 4,
+      difficulty: 'Débutant',
+    },
+    {
+      id: 10,
+      image: cardio,
+      category: 'Cardio',
+      students: 18,
+      name: 'Zumba Dance Party',
+      length: 45,
+      instructor: 'Max',
+      classes: 20,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 11,
+      image: weight,
+      category: 'Entraînement avec des poids',
+      students: 14,
+      name: 'Bootcamp avec poids corporel',
+      length: 60,
+      instructor: 'Sarah',
+      classes: 10,
+      difficulty: 'Avancé',
+    },
+    {
+      id: 12,
+      image: yoga,
+      category: 'Yoga',
+      students: 7,
+      name: 'Yin Yoga',
+      length: 75,
+      instructor: 'Alex',
+      classes: 6,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 13,
+      image: yoga,
+      category: 'Yoga',
+      students: 8,
+      name: 'Hatha Yoga',
+      length: 60,
+      instructor: 'Max',
+      classes: 5,
+      difficulty: 'Débutant',
+    },
+    {
+      id: 14,
+      image: cardio,
+      category: 'Cardio',
+      students: 15,
+      name: 'Cardio Dance',
+      length: 60,
+      instructor: 'Emma',
+      classes: 10,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 15,
+      image: yoga,
+      category: 'Yoga',
+      students: 20,
+      name: 'Vinyasa Flow',
+      length: 75,
+      instructor: 'Sarah',
+      classes: 12,
+      difficulty: 'Intermédiaire',
+    },
+    {
+      id: 16,
+      image: cardio,
+      category: 'Cardio',
+      students: 10,
+      name: 'Kickboxing Fusion',
+      length: 45,
+      instructor: 'Sarah',
+      classes: 8,
+      difficulty: 'Avancé',
+    },
+    {
+      id: 17,
+      image: yoga,
+      category: 'Yoga',
+      students: 12,
+      name: 'Power Yoga',
+      length: 60,
+      instructor: 'Austin',
+      classes: 15,
+      difficulty: 'Avancé',
+    },
+    {
+      id: 18,
+      image: cardio,
+      category: 'Cardio',
+      students: 18,
+      name: 'HIIT et Course',
+      length: 45,
+      instructor: 'Alex',
+      classes: 20,
+      difficulty: 'Intermédiaire',
+    },
   ];
 
-  // State for filters
+  // État pour les filtres
   const [studentsFilter, setStudentsFilter] = useState('');
   const [classesFilter, setClassesFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState([]);
   const [difficultyFilter, setDifficultyFilter] = useState('');
   const [durationFilter, setDurationFilter] = useState('');
 
-  // Function to handle filter changes
+  // Fonction pour gérer les modifications des filtres
   const handleFilterChange = (filterType, value) => {
     switch (filterType) {
       case 'students':
@@ -258,7 +246,6 @@ const FitnessClassApp = () => {
           setDifficultyFilter([...difficultyFilter, value]);
         }
         break;
-
       case 'duration':
         if (durationFilter.includes(value)) {
           setDurationFilter(durationFilter.filter((item) => item !== value));
@@ -266,18 +253,15 @@ const FitnessClassApp = () => {
           setDurationFilter([...durationFilter, value]);
         }
         break;
-        
       default:
         break;
     }
   };
 
-  // Function to check if a fitness class matches the selected filters
   const doesClassMatchFilters = (fitnessClass) => {
     const studentsMatch =
       studentsFilter.length === 0 ||
-      studentsFilter.includes('20+') &&
-      fitnessClass.students >= 20 ||
+      studentsFilter.includes('20+') && fitnessClass.students >= 20 ||
       (studentsFilter.includes('5-10') &&
         fitnessClass.students >= 5 &&
         fitnessClass.students <= 10) ||
@@ -287,8 +271,7 @@ const FitnessClassApp = () => {
 
     const classesMatch =
       classesFilter.length === 0 ||
-      classesFilter.includes('20+') &&
-      fitnessClass.classes >= 20 ||
+      classesFilter.includes('20+') && fitnessClass.classes >= 20 ||
       (classesFilter.includes('1-14') &&
         fitnessClass.classes >= 1 &&
         fitnessClass.classes <= 14) ||
@@ -298,7 +281,7 @@ const FitnessClassApp = () => {
 
     const activityMatch =
       activityFilter.length === 0 ||
-      activityFilter.includes('Weight Training') && fitnessClass.category === 'Weight Training' ||
+      activityFilter.includes('Entraînement avec des poids') && fitnessClass.category === 'Entraînement avec des poids' ||
       activityFilter.includes('Cardio') && fitnessClass.category === 'Cardio' ||
       activityFilter.includes('Yoga') && fitnessClass.category === 'Yoga';
 
@@ -306,12 +289,10 @@ const FitnessClassApp = () => {
       difficultyFilter.length === 0 ||
       difficultyFilter.includes(fitnessClass.difficulty);
 
-
-      const durationMatch =
+    const durationMatch =
       durationFilter.length === 0 ||
       (durationFilter.includes('90+') && fitnessClass.length >= 90) ||
       (durationFilter.includes('30-80') && fitnessClass.length >= 30 && fitnessClass.length <= 80);
-
 
     return (
       studentsMatch &&
@@ -322,7 +303,7 @@ const FitnessClassApp = () => {
     );
   };
 
-  // Function to render fitness class cards
+  // Fonction pour afficher les cartes de cours de fitness
   const renderFitnessClassCards = () => {
     const filteredClasses = fitnessClassesData.filter(doesClassMatchFilters);
 
@@ -337,9 +318,9 @@ const FitnessClassApp = () => {
     <div className="online-classes">
       <div className="page-container">
         <div className="sidebar">
-          <h2>Filters</h2>
+          <h2>Filtres</h2>
           <div>
-            <h3>Number of Students</h3>
+            <h3>Nombre d'étudiants</h3>
             <Form>
               <Form.Group>
                 <Form.Check
@@ -376,7 +357,7 @@ const FitnessClassApp = () => {
             </Form>
           </div>
           <div>
-            <h3>Number of Classes</h3>
+            <h3>Nombre de cours</h3>
             <Form>
               <Form.Group>
                 <Form.Check
@@ -413,15 +394,15 @@ const FitnessClassApp = () => {
             </Form>
           </div>
           <div>
-            <h3>Activity Type</h3>
+            <h3>Type d'activité</h3>
             <Form>
               <Form.Group>
                 <Form.Check
                   type="checkbox"
-                  label="Weight Training"
+                  label="Entraînement avec des poids"
                   name="activity"
-                  value="Weight Training"
-                  checked={activityFilter.includes('Weight Training')}
+                  value="Entraînement avec des poids"
+                  checked={activityFilter.includes('Entraînement avec des poids')}
                   onChange={(e) =>
                     handleFilterChange('activity', e.target.value)
                   }
@@ -450,35 +431,35 @@ const FitnessClassApp = () => {
             </Form>
           </div>
           <div>
-            <h3>Difficulty</h3>
+            <h3>Difficulté</h3>
             <Form>
               <Form.Group>
                 <Form.Check
                   type="checkbox"
-                  label="Beginner"
+                  label="Débutant"
                   name="difficulty"
-                  value="Beginner"
-                  checked={difficultyFilter.includes('Beginner')}
+                  value="Débutant"
+                  checked={difficultyFilter.includes('Débutant')}
                   onChange={(e) =>
                     handleFilterChange('difficulty', e.target.value)
                   }
                 />
                 <Form.Check
                   type="checkbox"
-                  label="Intermediate"
+                  label="Intermédiaire"
                   name="difficulty"
-                  value="Intermediate"
-                  checked={difficultyFilter.includes('Intermediate')}
+                  value="Intermédiaire"
+                  checked={difficultyFilter.includes('Intermédiaire')}
                   onChange={(e) =>
                     handleFilterChange('difficulty', e.target.value)
                   }
                 />
                 <Form.Check
                   type="checkbox"
-                  label="Advanced"
+                  label="Avancé"
                   name="difficulty"
-                  value="Advanced"
-                  checked={difficultyFilter.includes('Advanced')}
+                  value="Avancé"
+                  checked={difficultyFilter.includes('Avancé')}
                   onChange={(e) =>
                     handleFilterChange('difficulty', e.target.value)
                   }
@@ -487,7 +468,7 @@ const FitnessClassApp = () => {
             </Form>
           </div>
           <div>
-            <h3>Duration</h3>
+            <h3>Durée</h3>
             <Form>
               <Form.Group>
                 <Form.Check
@@ -516,7 +497,7 @@ const FitnessClassApp = () => {
         </div>
         <div className="content">
           <h1 className="title">
-            Online Classes that Suit your <span className="needs">NEEDS</span>
+            Cours en ligne qui répondent à vos <span className="needs">BESOINS</span>
           </h1>
           <Container>
             <Row xs={1} sm={2} md={3} className="card-row">

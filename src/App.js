@@ -1,23 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import Navbar from "./components/Navbar"
-import ScrollTop from "./components/Scroll"
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import Home from "./pages/Home"
-import Classes from "./pages/Classes"
+import Navbar from "./components/Navbar";
+import ScrollTop from "./components/Scroll";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Classes from "./pages/Classes";
+import ClassesFrench from "./pages_fr/Classes_fr";
 
 export default function App() {
+  const [language, setLanguage] = useState("EN");
+
+  const handleLanguageChange = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "EN" ? "FR" : "EN"));
+  };
+
   return (
     <div>
       <Router>
-        <ScrollTop/>
-        <Navbar/>
+        <ScrollTop />
+        <Navbar
+          language={language}
+          onLanguageChange={handleLanguageChange}
+        />
         <Switch>
-            <Route path="/" exact component= {Home} />
-            <Route path="/Classes" exact component= {Classes} />
-          </Switch>
-        </Router>
+          <Route
+            path="/"
+            exact
+            component={() => <Home language={language} />}
+          />
+          <Route
+            path={language === "FR" ? "/Classes_fr" : "/Classes"}
+            exact
+            component={language === "FR" ? ClassesFrench : Classes}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }
-

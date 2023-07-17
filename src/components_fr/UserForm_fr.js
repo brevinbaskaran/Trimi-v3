@@ -14,15 +14,15 @@ const UserForm = () => {
   const calculateFeedback = () => {
     let feedback = '';
     if (stepCount >= 10000 && heartRate <= 100 && caloriesConsumed <= 2000) {
-      feedback = 'Great job! You are staying active and maintaining a healthy lifestyle.';
+      feedback = 'Super ! Vous êtes actif et maintenez un mode de vie sain.';
     } else if (stepCount >= 8000 && heartRate <= 120 && caloriesConsumed <= 2200) {
-      feedback = 'Good job! You are on the right track towards a healthy lifestyle.';
+      feedback = 'Bon travail ! Vous êtes sur la bonne voie pour un mode de vie sain.';
     } else if (stepCount >= 5000 && heartRate <= 140 && caloriesConsumed <= 2500) {
-      feedback = 'You are making progress! Keep up the effort to improve your fitness.';
+      feedback = 'Vous faites des progrès ! Continuez vos efforts pour améliorer votre condition physique.';
     } else if (stepCount < 5000 || heartRate > 140 || caloriesConsumed > 2500) {
-      feedback = 'You could improve your fitness habits. Aim for more steps, maintain a lower heart rate, and watch your calorie intake.';
+      feedback = 'Vous pourriez améliorer vos habitudes de remise en forme. Visez plus de pas, maintenez un rythme cardiaque plus bas et surveillez votre apport calorique.';
     } else {
-      feedback = 'Keep tracking your health to see improvements!';
+      feedback = 'Continuez à suivre votre santé pour voir des améliorations !';
     }
     setHealthFeedback(feedback);
   };
@@ -46,60 +46,57 @@ const UserForm = () => {
   };
 
   return (
-    <div className="UserFormContainer">
-      <br></br>
-      <br></br>
-      <h2 className="UserFormHeading">Track Your Health</h2>
-      <div className="UserFormInputBox calories">
-        <label className="UserFormLabel" htmlFor="stepCountInput">
-          <i className="fas fa-walking"></i> Step Count:
-        </label>
+    <form className="UserFormContainer">
+      <br />
+      <br />
+      <h2 className="UserFormHeading">Suivi de votre santé</h2>
+        <legend>
+          <i className="fas fa-walking" aria-label="Icône de marche"></i> Nombre de pas :
+        </legend>
         <input
           type="number"
-          id="stepCountInput"
           value={stepCount}
           onChange={handleStepCountChange}
           className="UserFormInput"
-          aria-describedby="stepCountDescription"
+          aria-labelledby="step-count-label"
         />
-      </div>
-      <div className="UserFormInputBox heart-rate">
-        <label className="UserFormLabel" htmlFor="heartRateInput">
-          <i className="fas fa-heart"></i> Heart Rate:
-        </label>
+      
+        <legend>
+          <i className="fas fa-heart" aria-label="Icône de cœur"></i> Rythme cardiaque :
+        </legend>
         <input
           type="range"
-          id="heartRateInput"
           min={50}
           max={160}
           value={heartRate}
           onChange={handleHeartRateChange}
           className="UserFormSlider"
-          aria-describedby="heartRateDescription"
+          aria-labelledby="heart-rate-label"
+          aria-describedby="heart-rate-description"
         />
         <br />
-        <span className="heart-icon" role="img" aria-label="Heart Icon">&#10084;</span>
-        <span className="heart-icon">{heartRate}</span>
-      </div>
-      <div className="UserFormInputBox calories">
-        <label className="UserFormLabel" htmlFor="caloriesInput">
-          <i className="fas fa-fire"></i> Calories Consumed:
-        </label>
+        <span className="heart-icon" role="img" aria-label="Emoji de cœur">
+          &#10084;
+        </span>
+        <span className="heart-icon" aria-hidden="true">
+          {heartRate}
+        </span>
+        <legend>
+          <i className="fas fa-fire" aria-label="Icône de feu"></i> Calories consommées :
+        </legend>
         <input
           type="number"
-          id="caloriesInput"
           value={caloriesConsumed}
           onChange={handleCaloriesChange}
           className="UserFormInput"
-          aria-describedby="caloriesDescription"
+          aria-labelledby="calories-consumed-label"
         />
-      </div>
       {healthFeedback && (
-        <p className={`UserFormFeedback ${healthFeedback ? 'animated zoom-in' : ''}`} id="healthFeedback" role="status">
+        <p className={`UserFormFeedback ${healthFeedback ? 'animated zoom-in' : ''}`}>
           {healthFeedback}
         </p>
       )}
-    </div>
+    </form>
   );
 };
 

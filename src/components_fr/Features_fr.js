@@ -42,16 +42,15 @@ export default function Features() {
     <div className="features">
       <div className="features-container">
         <div className="heading" ref={el => { headingRef = el }}>
-          <h2><span>WORKOUT PROGRAM</span></h2>
-          <h2>MADE</h2>
-          <h2>FOR YOU</h2>
+          <h2><span>PROGRAMME D'ENTRAÎNEMENT</span></h2>
+          <h2>POUR VOUS</h2>
           <div className="brush-stroke"></div>
           <br />
           <div className="paragraph" ref={el => { paragraphRef = el }}>
             <p>
-              Wake up with a sunrise meditation, sweat it out with lunchtime HIIT.
-              You’ll find movement for every mood with classes sorted by time, style, and skill level.
-              Or Finish your day with a relaxing evening yoga session, and discover your transformative power.
+              Réveillez-vous avec une méditation au lever du soleil, transpirez avec des séances de HIIT à l'heure du déjeuner.
+              Vous trouverez des mouvements pour chaque humeur avec des cours triés par heure, style et niveau de compétence.
+              Ou terminez votre journée avec une séance de yoga relaxante le soir et découvrez votre pouvoir transformateur.
             </p>
           </div>
         </div>
@@ -59,7 +58,7 @@ export default function Features() {
           <img
             className="features-image"
             src="https://www.mensjournal.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk2MTM2MDQyNDIzOTg1Mjk3/dbfrontsquat.jpg"
-            alt="Gym"
+            alt="Salle de sport"
           />
         </div>
       </div>

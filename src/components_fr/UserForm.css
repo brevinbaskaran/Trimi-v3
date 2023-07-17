@@ -1,0 +1,111 @@
+.UserFormContainer {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #00FFF0;
+    margin-left: 10px;
+    background-color: #18171A;
+
+  }
+  
+  .UserFormHeading {
+    color: white;
+    font-size: 38px;
+    font-family: Lato;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.46px;
+    margin-bottom: 20px;
+  }
+  
+  .UserFormLabel {
+    color: #00fff0;
+    margin-bottom: 10px;
+  }
+  
+  .UserFormInput {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #00fff0;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .UserFormInputBox {
+    margin-bottom: 20px;
+  }
+  
+  .UserFormSlider {
+    width: 100%;
+    height: 30px;
+    background-color: #18171A;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  
+  .UserFormSlider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background-color: #00fff0;
+    border-radius: 2.5px;
+  }
+  
+  .UserFormSlider::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background-color: #00fff0;
+    border-radius: 2.5px;
+  }
+  
+  .UserFormSlider::-moz-range-progress {
+    background-color: #FF7575;
+    height: 5px;
+    border-radius: 2.5px;
+  }
+  
+  .UserFormSubmitButton {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00fff0;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .heart-icon {
+    color: #FF7575;
+  }
+  
+  .UserFormFeedback {
+    color: #fff;
+    margin-top: 20px;
+    animation: zoomIn 0.5s ease forwards;
+    opacity: 0;
+    font-family: Outfit;
+    transform-origin: center;
+    font-size: 18px;
+
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
