@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Membership() {
 
-  const history = useHistory(); // Create a history object using useHistory
+  const history = useHistory(); 
 
   let text = useRef(null);
 
@@ -22,7 +22,7 @@ export default function Membership() {
       ease: 'ease-in',
       scrollTrigger: {
         trigger: text,
-        start: 'top 90%',
+        start: 'top 91%',
         end: 'bottom 60%',
         toggleActions: 'restart complete ',
       },

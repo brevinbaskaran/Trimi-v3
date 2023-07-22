@@ -6,19 +6,18 @@ import { Power3, gsap } from "gsap"
 import './fonts/fonts.css';
 
 export default function HeroSection() {
-  let textRef = useRef(null);
+  let headingRef = useRef(null);
   let statsRef = useRef(null);
-  const tl = gsap.timeline();
+  const animation = gsap.timeline();
 
   useEffect(() => {
-    tl.to(textRef, 0.6, { opacity: 1, y: 0, ease: Power3 })
-    tl.from(statsRef, 0.6, { opacity: 0, scale: 0.5, ease: Power3 }, "-=0.4");
+    animation.to(headingRef, 0.6, { opacity: 1, y: 0, ease: 'power3' });
+    animation.from(statsRef, 0.7, { opacity: 0, scale: 0.5, ease: 'power3' }, "-=0.5");
   }, []);
-
 
   return (
     <div className="hero-container" id="hero">
-      <div className="hero--header" ref={el => { textRef = el }}>
+      <div className="hero--header" ref={el => { headingRef = el }}>
         <h3 className="energize">Energize</h3>
         <h4>Your Potential</h4>
 

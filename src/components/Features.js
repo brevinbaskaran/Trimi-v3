@@ -11,7 +11,7 @@ export default function Features() {
   let imageRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(headingRef, {
+    const headingAnimation = gsap.from(headingRef, {
       duration: 1,
       x: '-100%',
       opacity: 0,
@@ -24,7 +24,7 @@ export default function Features() {
       },
     });
 
-    gsap.from(paragraphRef, {
+    const paragraphAnimation = gsap.from(paragraphRef, {
       duration: 1,
       x: '-100%',
       opacity: 0,
@@ -36,6 +36,25 @@ export default function Features() {
         toggleActions: 'restart complete',
       },
     });
+
+    const imageAnimation = gsap.from(imageRef, {
+      duration: 1,
+      y: '100%',
+      opacity: 0,
+      ease: 'ease-in',
+      scrollTrigger: {
+        trigger: imageRef,
+        start: 'top 90%',
+        end: 'bottom 60%',
+        toggleActions: 'restart complete',
+      },
+    });
+
+    return () => {
+      headingAnimation.kill();
+      paragraphAnimation.kill();
+      imageAnimation.kill();
+    };
   }, []);
 
   return (
